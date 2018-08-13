@@ -16,9 +16,7 @@
         type='text/css' 
         media='all' />
     <script>
-    var host = "omegga.net";
-    if ((host == window.location.host) && (window.location.protocol != "https:"))
-        window.location.protocol = "https";
+    if (location.protocol !== "https:") location.protocol = "https:";
     </script>
     <!-- inner css -->
     <style>
