@@ -37,6 +37,51 @@
 		.divtext {
 
 		}
+
+		/* @group Blink */
+		.blink {
+			-webkit-animation: blink .75s linear infinite;
+			-moz-animation: blink .75s linear infinite;
+			-ms-animation: blink .75s linear infinite;
+			-o-animation: blink .75s linear infinite;
+			 animation: blink .75s linear infinite;
+		}
+		
+		@-webkit-keyframes blink {
+			0% { opacity: 1; }
+			50% { opacity: 1; }
+			50.01% { opacity: 0; }
+			100% { opacity: 0; }
+		}
+		
+		@-moz-keyframes blink {
+			0% { opacity: 1; }
+			50% { opacity: 1; }
+			50.01% { opacity: 0; }
+			100% { opacity: 0; }
+		}
+
+		@-ms-keyframes blink {
+			0% { opacity: 1; }
+			50% { opacity: 1; }
+			50.01% { opacity: 0; }
+			100% { opacity: 0; }
+		}
+		
+		@-o-keyframes blink {
+			0% { opacity: 1; }
+			50% { opacity: 1; }
+			50.01% { opacity: 0; }
+			100% { opacity: 0; }
+		}
+		
+		@keyframes blink {
+			0% { opacity: 1; }
+			50% { opacity: 1; }
+			50.01% { opacity: 0; }
+			100% { opacity: 0; }
+		}
+		/* @end */
 	</style>
 </head>
 
@@ -52,7 +97,7 @@
     </pre>
 	<div id="text" class="divtext">
 		<p class="text">client&#64;omegga:&#126;&#36; cd unknown_page/</p>
-		<p class="text"> - Revenir &agrave; l&apos;accueil (<a title="Home" href="http://www.omegga.net" class="text" style="text-decoration: none; border-bottom: 2px solid #00ff00;">y</a>/n) ?</p>
+		<p class="text"> - Revenir &agrave; l&apos;accueil (<a title="Home" href="http://www.omegga.net" class="text" style="text-decoration: none; border-bottom: 2px solid #00ff00;"><span class="tab blink">y</span></a>/n) ? </p>
 		<br /><br /><br /><br /><br />
 
 	</div>
